@@ -54,8 +54,8 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
       com.example.hodowla.service.Dane dane = null;
       synchronized (application) {
         dane = (com.example.hodowla.service.Dane) _jspx_page_context.getAttribute("dane", PageContext.APPLICATION_SCOPE);
@@ -64,31 +64,31 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("dane", dane, PageContext.APPLICATION_SCOPE);
         }
       }
-      out.write("\n");
-      out.write("<!DOCTYPE>\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("    <title>HODOWLA</title>\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("<h2>Oto Twoja hodowla:</h2>\n");
-      out.write("\n");
-      out.write("<div>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE>\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("    <title>HODOWLA</title>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("<h2>Oto Twoja hodowla:</h2>\r\n");
+      out.write("\r\n");
+      out.write("<div>\r\n");
       out.write("    ");
       if (_jspx_meth_c_if_0(_jspx_page_context))
         return;
-      out.write("\n");
+      out.write("\r\n");
       out.write("    ");
       if (_jspx_meth_c_forEach_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("</div>\n");
-      out.write("\n");
-      out.write("<h5><p><a href=\"Dod_Psa.jsp\">Dodaj psa!</a></p></h5>\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("<h5><p><a href=\"Dod_Psa.jsp\">Dodaj psa!</a></p></h5>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -114,10 +114,11 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_if_0 = _jspx_th_c_if_0.doStartTag();
     if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
-        out.write("        <div>\n");
-        out.write("            <h4>Twoja hodowla wydaje się być pusta</h4>\n");
-        out.write("        </div>\n");
+        out.write("\r\n");
+        out.write("        <div>\r\n");
+        out.write("            <h4>Twoja hodowla wydaje się być pusta</h4>\r\n");
+        out.write("            <a href=\"przykladowe.jsp\">Dodaj przykładowe dane!</a>\r\n");
+        out.write("        </div>\r\n");
         out.write("    ");
         int evalDoAfterBody = _jspx_th_c_if_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -147,19 +148,16 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
       if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("        <a href=\"pokazpies.jsp?id=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\">\n");
-          out.write("                    <img style=\"width:100px; height:100px\" src=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getzdjUrl()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\">\n");
+          out.write("\">\r\n");
           out.write("                        <h2>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("</h2>\n");
-          out.write("                    \n");
-          out.write("                \n");
-          out.write("            </a>\n");
+          out.write("</h2>\r\n");
+          out.write("                    \r\n");
+          out.write("                \r\n");
+          out.write("            </a>\r\n");
           out.write("    ");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

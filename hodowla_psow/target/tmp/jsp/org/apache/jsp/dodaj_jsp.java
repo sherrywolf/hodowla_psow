@@ -42,8 +42,8 @@ public final class dodaj_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
       com.example.hodowla.domain.Pies pies = null;
       synchronized (session) {
         pies = (com.example.hodowla.domain.Pies) _jspx_page_context.getAttribute("pies", PageContext.SESSION_SCOPE);
@@ -52,8 +52,10 @@ public final class dodaj_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("pies", pies, PageContext.SESSION_SCOPE);
         }
       }
+      out.write('\r');
       out.write('\n');
       org.apache.jasper.runtime.JspRuntimeLibrary.introspect(_jspx_page_context.findAttribute("pies"), request);
+      out.write('\r');
       out.write('\n');
       com.example.hodowla.service.Dane dane = null;
       synchronized (application) {
@@ -63,8 +65,8 @@ public final class dodaj_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("dane", dane, PageContext.APPLICATION_SCOPE);
         }
       }
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
 
     dane.dodaj(pies);
     response.sendRedirect("hodowla.jsp");

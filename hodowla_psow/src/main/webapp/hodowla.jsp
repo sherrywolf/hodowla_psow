@@ -15,11 +15,11 @@
     <c:if test="${dane.gethodowla().size() == 0}">
         <div>
             <h4>Twoja hodowla wydaje się być pusta</h4>
+            <a href="przykladowe.jsp">Dodaj przykładowe dane!</a>
         </div>
     </c:if>
     <c:forEach items="${dane.gethodowla()}" var="pies">
         <a href="pokazpies.jsp?id=${dane.gethodowla().indexOf(pies)}">
-                    <img style="width:100px; height:100px" src="${pies.getzdjUrl()}">
                         <h2>${pies.getimie()}</h2>
                     
                 
