@@ -25,6 +25,10 @@ public class Dane {
         db.set(id, ed_pies);
     }
 
+    public void usun(int id){
+        db.remove(id);
+    }
+
     public List<Pies> gethodowla() {
         return db;
     }

@@ -41,20 +41,20 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("<!DOCTYPE>\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>HODOWLA</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h2>Witaj w hodowli!</h2>\n");
-      out.write("        <article>Możesz tutaj zarządzać swoją własną hodowlą psów. Dodawaj psy i twórz własne mioty. Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</article>\n");
-      out.write("        <h5><p><a href=\"Dod_Psa.jsp\">Dodaj swojego pierwszego psa!</a></p></h5>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE>\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>HODOWLA</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <h2>Witaj w hodowli!</h2>\r\n");
+      out.write("        <article>Możesz tutaj zarządzać swoją własną hodowlą psów. Dodawaj psy i twórz własne mioty. Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</article>\r\n");
+      out.write("        <h5><p><a href=\"Dod_Psa.jsp\">Dodaj swojego pierwszego psa!</a></p></h5>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
