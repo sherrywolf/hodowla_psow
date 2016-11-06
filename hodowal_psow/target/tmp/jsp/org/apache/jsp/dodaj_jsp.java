@@ -3,8 +3,9 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import hodowla.Pies;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class dodaj_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -30,7 +31,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html;charset=UTF-8");
+      response.setContentType("text/html; charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -42,19 +43,34 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
-      out.write("<!DOCTYPE>\r\n");
       out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>HODOWLA</title>\r\n");
-      out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
-      out.write("        <h2>Witaj w hodowli!</h2>\r\n");
-      out.write("        <article>Możesz tutaj zarządzać swoją własną hodowlą psów. Dodawaj psy i twórz własne mioty. Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</article>\r\n");
-      out.write("        <h5><p><a href=\"Dod_Psa.jsp\">Dodaj swojego pierwszego psa!</a></p></h5>\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
+      hodowla.Pies pies = null;
+      synchronized (session) {
+        pies = (hodowla.Pies) _jspx_page_context.getAttribute("pies", PageContext.SESSION_SCOPE);
+        if (pies == null){
+          pies = new hodowla.Pies();
+          _jspx_page_context.setAttribute("pies", pies, PageContext.SESSION_SCOPE);
+        }
+      }
+      out.write('\r');
+      out.write('\n');
+      org.apache.jasper.runtime.JspRuntimeLibrary.introspect(_jspx_page_context.findAttribute("pies"), request);
+      out.write('\r');
+      out.write('\n');
+      hodowla.Dane dane = null;
+      synchronized (application) {
+        dane = (hodowla.Dane) _jspx_page_context.getAttribute("dane", PageContext.APPLICATION_SCOPE);
+        if (dane == null){
+          dane = new hodowla.Dane();
+          _jspx_page_context.setAttribute("dane", dane, PageContext.APPLICATION_SCOPE);
+        }
+      }
+      out.write("\r\n");
+      out.write("\r\n");
+
+    dane.dodaj(pies);
+    response.sendRedirect("hodowla.jsp");
+
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
