@@ -4,15 +4,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="static/style.css">
     <title>HODOWLA</title>
 </head>
 
 <body>
 
 <article>
-    <h1>Dodaj psa:</h1>
+    <h1 class="nagl">Dodaj psa:</h1>
 
-        <form action="dodaj.jsp">
+        <form action="dodaj.jsp" class="index">
             <div>
                 <label for="imie">Imie</label>
                 <input id="imie" type="text" name="imie" required/>
@@ -31,8 +32,8 @@
                 <input id="zdjUrl" type="url" name="zdjUrl" value="" required/>
             </div>
             <div>
-                <a href="hodowla.jsp">Wróć</a>
-                <input type="submit" value="Dodaj">
+                <a href="hodowla.jsp" class="button">Wróć</a>
+                <input type="submit" class="button2" value="Dodaj">
             </div>
         </form>
 

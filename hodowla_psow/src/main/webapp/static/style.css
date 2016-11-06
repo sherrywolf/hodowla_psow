@@ -1,0 +1,69 @@
+body {
+    color: white;
+    background-color: #7F8794;
+}
+
+.index{
+	background-color: aliceblue;
+	color: #345282;
+	text-align: center;
+	font-size: 29px;
+	border-radius: 25px;
+	width: 1000px;
+	margin: auto;
+	padding: 50px 0px;
+}
+
+.nagl{
+	text-align: center;
+	font-size: 59px;
+}
+
+.button{
+	background-color: #6C8FC7;
+	width: 200px;
+	height: 20px;
+	margin: 20px auto;
+	padding: 15px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+}
+.button2{
+	background-color: #6C8FC7;
+	width: 100px;
+	height: 65px;
+	margin: 20px auto;
+	padding: 15px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.button:hover{
+	background-color: #73A9FF;
+}
+
+.button2:hover{
+	background-color: #73A9FF;
+}
+	width: 1000px;
+	margin: auto;
+	padding: 50px 0px;
+}(top, rgba(255,255,255,0) 0%,rgba(130,91,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(130,91,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(130,91,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00',GradientType=0 ); /* IE6-9 */
+
+}
+
+.index{
+	background-color: aliceblue;
+	color: #345282;
+	text-align: center;
+	font-size: 29px;
+	border-radius: 25px;
+	width: 1000px;
+	margin: auto;
+	padding: 50px 0px;
+}

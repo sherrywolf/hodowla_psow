@@ -47,12 +47,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"static/style.css\">\r\n");
       out.write("        <title>HODOWLA</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        <h2>Witaj w hodowli!</h2>\r\n");
-      out.write("        <p>Możesz tutaj zarządzać swoją własną hodowlą psów. Dodawaj psy i twórz własne mioty. Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</p>\r\n");
-      out.write("        <h5><a href=\"Dod_Psa.jsp\">Dodaj swojego pierwszego psa!</a></h5>\r\n");
+      out.write("        <h2 class=\"nagl\">Witaj w hodowli!</h2>\r\n");
+      out.write("        <p class=\"index\">Możesz tutaj zarządzać swoją własną hodowlą psów. <br>Dodawaj psy i twórz własne mioty.<br> Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</p>\r\n");
+      out.write("        <a href=\"Dod_Psa.jsp\"><h5 class=\"button\">Dodaj swojego pierwszego psa!</h5></a>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
