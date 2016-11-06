@@ -52,7 +52,7 @@ public final class Dod_005fPsa_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
       }
       out.write("\r\n");
-      out.write("<!DOCTYPE>\r\n");
+      out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");

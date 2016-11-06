@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="dane" class="com.example.hodowla.service.Dane" scope="application"/>
-<!DOCTYPE>
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -27,6 +27,7 @@
     </c:forEach>
 </div>
 
-<h5><p><a href="Dod_Psa.jsp">Dodaj psa!</a></p></h5>
+<p>Możesz wyświetlić również same <a href="samice.jsp">samice</a> lub samych <a href="samce.jsp">samców</a></p>
+<h5><a href="Dod_Psa.jsp">Dodaj psa!</a></h5>
 </body>
 </html>

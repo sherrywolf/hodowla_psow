@@ -21,14 +21,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Dane.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hodowla.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/hodowla.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="55" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dod_Psa.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/Dod_Psa.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samice.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/samice.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samce.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/samce.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/service/Dane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
+            <state relative-caret-position="660">
               <caret line="36" column="139" selection-start-line="36" selection-start-column="139" selection-end-line="36" selection-end-column="139" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pies.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/domain/Pies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#228#229#0" expanded="false" />
+                <element signature="e#251#252#0" expanded="false" />
+                <element signature="e#480#481#0" expanded="false" />
+                <element signature="e#507#508#0" expanded="false" />
+                <element signature="e#547#548#0" expanded="false" />
+                <element signature="e#579#580#0" expanded="false" />
+                <element signature="e#606#607#0" expanded="false" />
+                <element signature="e#632#633#0" expanded="false" />
+                <element signature="e#667#668#0" expanded="false" />
+                <element signature="e#697#698#0" expanded="false" />
+                <element signature="e#728#729#0" expanded="false" />
+                <element signature="e#755#756#0" expanded="false" />
+                <element signature="e#795#796#0" expanded="false" />
+                <element signature="e#827#828#0" expanded="false" />
+                <element signature="e#860#861#0" expanded="false" />
+                <element signature="e#889#890#0" expanded="false" />
+                <element signature="e#933#934#0" expanded="false" />
+                <element signature="e#969#970#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,8 +124,12 @@
         <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/Us_Psa.js" />
         <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/Us_Psa.jsp" />
         <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/przykladowe.jsp" />
-        <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/hodowla.jsp" />
         <option value="$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/service/Dane.java" />
+        <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/Dod_Psa.jsp" />
+        <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/hodowla.jsp" />
+        <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/samice.jsp" />
+        <option value="$PROJECT_DIR$/hodowla_psow/src/main/webapp/samce.jsp" />
       </list>
     </option>
   </component>
@@ -389,12 +460,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1478457387260</updated>
-      <workItem from="1478457388559" duration="1676000" />
+      <workItem from="1478457388559" duration="5591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1676000" />
+    <option name="totallyTimeSpent" value="5591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -442,34 +513,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/edytuj.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/Us_Psa.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/pokazpies.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/Us_Psa.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -482,6 +529,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/pokazpies.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/przykladowe.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -490,38 +545,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/domain/Pies.java">
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/Us_Psa.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/Ed_Psa.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/domain/Pies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#480#481#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#547#548#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#728#729#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#860#861#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#969#970#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/service/Dane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="36" column="139" selection-start-line="36" selection-start-column="139" selection-end-line="36" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/edytuj.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/hodowla.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        <state relative-caret-position="440">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/Dod_Psa.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="560">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/java/com/example/hodowla/service/Dane.java">
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/samice.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="36" column="139" selection-start-line="36" selection-start-column="139" selection-end-line="36" selection-end-column="139" />
-          <folding>
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="616">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hodowla_psow/src/main/webapp/samce.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

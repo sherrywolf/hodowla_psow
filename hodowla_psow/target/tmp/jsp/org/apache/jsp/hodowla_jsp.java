@@ -65,7 +65,7 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
       }
       out.write("\r\n");
-      out.write("<!DOCTYPE>\r\n");
+      out.write("<!DOCTYPE html>\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
@@ -86,7 +86,8 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("</div>\r\n");
       out.write("\r\n");
-      out.write("<h5><p><a href=\"Dod_Psa.jsp\">Dodaj psa!</a></p></h5>\r\n");
+      out.write("<p>Możesz wyświetlić również same <a href=\"samice.jsp\">samice</a> lub samych <a href=\"samce.jsp\">samców</a></p>\r\n");
+      out.write("<h5><a href=\"Dod_Psa.jsp\">Dodaj psa!</a></h5>\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

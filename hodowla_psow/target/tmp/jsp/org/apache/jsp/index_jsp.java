@@ -42,7 +42,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
-      out.write("<!DOCTYPE>\r\n");
+      out.write("<!DOCTYPE html>\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
@@ -51,8 +51,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
       out.write("        <h2>Witaj w hodowli!</h2>\r\n");
-      out.write("        <article>Możesz tutaj zarządzać swoją własną hodowlą psów. Dodawaj psy i twórz własne mioty. Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</article>\r\n");
-      out.write("        <h5><p><a href=\"Dod_Psa.jsp\">Dodaj swojego pierwszego psa!</a></p></h5>\r\n");
+      out.write("        <p>Możesz tutaj zarządzać swoją własną hodowlą psów. Dodawaj psy i twórz własne mioty. Pamiętaj żeby regularnie karmić swoje zwierzęta ;)</p>\r\n");
+      out.write("        <h5><a href=\"Dod_Psa.jsp\">Dodaj swojego pierwszego psa!</a></h5>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
