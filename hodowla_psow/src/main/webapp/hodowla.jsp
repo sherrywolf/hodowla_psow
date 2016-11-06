@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="dane" class="com.example.hodowla.service.Dane" scope="application"/>
+<jsp:useBean id="licznik" class="com.example.hodowla.web.Licznik" scope="application"/>
 <!DOCTYPE html>
 
 <html>
@@ -10,6 +11,8 @@
 </head>
 <body>
 <h2>Oto Twoja hodowla:</h2>
+
+<% licznik.zero(); %>
 
 <div>
     <c:if test="${dane.gethodowla().size() == 0}">

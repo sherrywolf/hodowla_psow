@@ -64,6 +64,16 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("dane", dane, PageContext.APPLICATION_SCOPE);
         }
       }
+      out.write('\r');
+      out.write('\n');
+      com.example.hodowla.web.Licznik licznik = null;
+      synchronized (application) {
+        licznik = (com.example.hodowla.web.Licznik) _jspx_page_context.getAttribute("licznik", PageContext.APPLICATION_SCOPE);
+        if (licznik == null){
+          licznik = new com.example.hodowla.web.Licznik();
+          _jspx_page_context.setAttribute("licznik", licznik, PageContext.APPLICATION_SCOPE);
+        }
+      }
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("\r\n");
@@ -74,6 +84,9 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("<h2>Oto Twoja hodowla:</h2>\r\n");
+      out.write("\r\n");
+ licznik.zero(); 
+      out.write("\r\n");
       out.write("\r\n");
       out.write("<div>\r\n");
       out.write("    ");
