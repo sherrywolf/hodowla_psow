@@ -83,8 +83,8 @@ public final class Dod_005fPsa_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <input id=\"zdjUrl\" type=\"url\" name=\"coverUrl\" value=\"\" required/>\r\n");
       out.write("            </div>\r\n");
       out.write("            <div>\r\n");
-      out.write("                <a href=hodowla.jsp\">Back</a>\r\n");
-      out.write("                <input type=\"submit\" value=\"dodaj\">\r\n");
+      out.write("                <a href=hodowla.jsp\">Wróć</a>\r\n");
+      out.write("                <input type=\"submit\" value=\"Dodaj\">\r\n");
       out.write("            </div>\r\n");
       out.write("        </form>\r\n");
       out.write("\r\n");
