@@ -74,7 +74,7 @@ public final class Dod_005fPsa_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <input id=\"rok\" type=\"number\" name=\"rok\" value=\"\" min=\"1990\" max=\"2017\" required/>\r\n");
       out.write("            </div>\r\n");
       out.write("                <label for=\"plec\">Płeć</label>\r\n");
-      out.write("                <select id=\"plec\" type=\"text\" name=\"plec\">\r\n");
+      out.write("                <select id=\"plec\" name=\"plec\">\r\n");
       out.write("                    <option>samica</option>\r\n");
       out.write("                    <option>samiec</option>\r\n");
       out.write("                </select>\r\n");

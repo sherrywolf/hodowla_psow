@@ -20,6 +20,11 @@ public class Dane {
         db.add(nPies);
     }
 
+    public void edytuj(Pies pies,int id) {
+        Pies ed_pies = new Pies(pies.getimie(), pies.getrok(), pies.getplec(), pies.getzdjUrl());
+        db.set(id,ed_pies);
+    }
+
     public List<Pies> gethodowla() {
         return db;
     }

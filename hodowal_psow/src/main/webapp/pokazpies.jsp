@@ -17,6 +17,8 @@
                 <span> Rok urodzenia: ${pies.getrok()} </span><br>
                 <span> Płeć: ${pies.getplec()} </span>
             </div>
-<a href='hodowla.jsp'>Wróć </a>
+    <a href='hodowla.jsp'>Wróć </a>
+    <a href='Ed_Psa.jsp?id=${dane.gethodowla().indexOf(pies)}'>Edytuj </a>
+    <a href='Us_Psa.jsp?id=${dane.gethodowla().indexOf(pies)}'>Usuń </a>
 </body>
 </html>

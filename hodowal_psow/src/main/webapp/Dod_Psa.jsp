@@ -22,7 +22,7 @@
                 <input id="rok" type="number" name="rok" value="" min="1990" max="2017" required/>
             </div>
                 <label for="plec">Płeć</label>
-                <select id="plec" type="text" name="plec">
+                <select id="plec" name="plec">
                     <option>samica</option>
                     <option>samiec</option>
                 </select>

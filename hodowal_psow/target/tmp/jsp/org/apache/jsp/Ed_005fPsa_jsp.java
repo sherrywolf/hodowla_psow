@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import hodowla.Pies;
 
-public final class pokazpies_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class Ed_005fPsa_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -58,36 +58,61 @@ public final class pokazpies_jsp extends org.apache.jasper.runtime.HttpJspBase
  int id = Integer.parseInt(request.getParameter("id"));
     Pies pies = dane.gethodowla().get(id);
     pageContext.setAttribute("pies", pies);
+
       out.write("\r\n");
+      out.write("<!DOCTYPE>\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("    <title>HODOWLA</title>\r\n");
       out.write("</head>\r\n");
+      out.write("\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2>Szczegóły o ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("!</h2>\r\n");
-      out.write("        <img src=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getzdjUrl()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\r\n");
+      out.write("<article>\r\n");
+      out.write("    <h1>Edycja psa o id ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(":</h1>\r\n");
+      out.write("\r\n");
+      out.write("    <form action=\"edytuj.jsp\">\r\n");
+      out.write("        <input type=\"hidden\" name=\"id\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\"/>\r\n");
-      out.write("            <div>\r\n");
-      out.write("                <span> Rok urodzenia: ");
+      out.write("        <div>\r\n");
+      out.write("            <label for=\"imie\">Imie</label>\r\n");
+      out.write("            <input id=\"imie\" type=\"text\" name=\"imie\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" required/>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <div>\r\n");
+      out.write("            <label for=\"rok\">Rok urodzenia:</label>\r\n");
+      out.write("            <input id=\"rok\" type=\"number\" name=\"rok\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getrok()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(" </span><br>\r\n");
-      out.write("                <span> Płeć: ");
+      out.write("\" min=\"1990\" max=\"2017\" required/>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <label for=\"plec\">Płeć</label>\r\n");
+      out.write("        <select id=\"plec\" name=\"plec\">\r\n");
+      out.write("            <option>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getplec()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(" </span>\r\n");
-      out.write("            </div>\r\n");
-      out.write("    <a href='hodowla.jsp'>Wróć </a>\r\n");
-      out.write("    <a href='Ed_Psa.jsp?id=");
+      out.write("</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("        <div>\r\n");
+      out.write("            <label for=\"zdjUrl\">Link zdjęcia</label>\r\n");
+      out.write("            <input id=\"zdjUrl\" type=\"url\" name=\"zdjUrl\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getzdjUrl()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" required/>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <div>\r\n");
+      out.write("            <a href=\"pokazpies.jsp?id=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("'>Edytuj </a>\r\n");
-      out.write("    <a href='Us_Psa.jsp?id=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("'>Usuń </a>\r\n");
+      out.write("\">Wróć</a>\r\n");
+      out.write("            <input type=\"submit\" value=\"Edytuj\">\r\n");
+      out.write("        </div>\r\n");
+      out.write("    </form>\r\n");
+      out.write("\r\n");
+      out.write("</article>\r\n");
       out.write("</body>\r\n");
-      out.write("</html>\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
