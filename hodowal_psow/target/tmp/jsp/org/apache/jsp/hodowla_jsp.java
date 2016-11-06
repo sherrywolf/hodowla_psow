@@ -151,7 +151,7 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("        <a href=\"pokazpies.jsp?id=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\">\r\n");
-          out.write("                <div class=\"item\" style=\"background-image: url('");
+          out.write("                <div style=\"background-image: url('");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getzdjUrl()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("')\">\r\n");
           out.write("                    <div>\r\n");
@@ -160,9 +160,7 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("</span>\r\n");
           out.write("                    </div>\r\n");
           out.write("                </div>\r\n");
-          out.write("\r\n");
           out.write("            </a>\r\n");
-          out.write("        \r\n");
           out.write("    ");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

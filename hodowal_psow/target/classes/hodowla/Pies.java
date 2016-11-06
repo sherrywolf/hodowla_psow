@@ -1,7 +1,7 @@
 package hodowla;
 
-import java.io.*;
-import java.lang.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 import java.util.ArrayList;
 import java.util.List;
 

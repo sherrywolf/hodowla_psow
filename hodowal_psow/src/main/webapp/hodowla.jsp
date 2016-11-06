@@ -19,7 +19,7 @@
     </c:if>
     <c:forEach items="${dane.gethodowla()}" var="pies">
         <a href="pokazpies.jsp?id=${dane.gethodowla().indexOf(pies)}">
-                <div class="item" style="background-image: url('${pies.getzdjUrl()}')">
+                <div style="background-image: url('${pies.getzdjUrl()}')">
                     <div>
                         <span>${pies.getimie()}</span>
                     </div>

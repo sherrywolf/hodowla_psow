@@ -28,10 +28,10 @@
                 </select>
             <div>
                 <label for="zdjUrl">Link zdjęcia</label>
-                <input id="zdjUrl" type="url" name="coverUrl" value="" required/>
+                <input id="zdjUrl" type="url" name="zdjUrl" value="" required/>
             </div>
             <div>
-                <a href=hodowla.jsp">Wróć</a>
+                <a href="hodowla.jsp">Wróć</a>
                 <input type="submit" value="Dodaj">
             </div>
         </form>

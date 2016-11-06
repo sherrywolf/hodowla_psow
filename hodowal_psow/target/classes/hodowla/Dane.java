@@ -18,7 +18,6 @@ public class Dane {
     public void dodaj(Pies pies) {
         Pies nPies = fixedPies(pies);
         db.add(nPies);
-        System.out.println(db.size());
     }
 
     public List<Pies> gethodowla() {
