@@ -5,7 +5,6 @@
 <jsp:useBean id="dane" class="hodowla.Dane" scope="application"/>
 <%
     int id = Integer.parseInt(request.getParameter("id"));
-    Pies test = dane.gethodowla().get(id);
-    dane.edytuj(dane.gethodowla().indexOf(test),pies);
+    dane.usun(id);
     response.sendRedirect("hodowla.jsp");
 %>

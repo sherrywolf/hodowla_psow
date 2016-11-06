@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import hodowla.Pies;
 
-public final class edytuj_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class Us_005fPsa_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -69,8 +69,7 @@ public final class edytuj_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
 
     int id = Integer.parseInt(request.getParameter("id"));
-    Pies test = dane.gethodowla().get(id);
-    dane.edytuj(dane.gethodowla().indexOf(test),pies);
+    dane.usun(1);
     response.sendRedirect("hodowla.jsp");
 
     } catch (Throwable t) {
