@@ -90,12 +90,13 @@ public final class samice_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("    <link rel=\"stylesheet\" href=\"static/style.css\">\r\n");
       out.write("    <title>HODOWLA</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("<h2>Oto Twoje samice:</h2>\r\n");
+      out.write("<h2 class=\"nagl\">Oto Twoje samice:</h2>\r\n");
       out.write("\r\n");
-      out.write("<div>\r\n");
+      out.write("<div class=\"index\">\r\n");
       out.write("\r\n");
       out.write("    ");
       //  c:forEach
@@ -123,7 +124,7 @@ public final class samice_jsp extends org.apache.jasper.runtime.HttpJspBase
                 out.write("        <a href=\"pokazpies.jsp?id=");
                 out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
                 out.write("\">\r\n");
-                out.write("            <h2>");
+                out.write("            <h2 class=\"button\">");
                 out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
                 out.write("</h2>\r\n");
                 out.write("        </a>\r\n");
@@ -165,9 +166,9 @@ public final class samice_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_if_1(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("\r\n");
+      out.write("    <a href=\"hodowla.jsp\" class=\"button\">Wróć</a>\r\n");
       out.write("</div>\r\n");
-      out.write("    <a href=\"hodowla.jsp\">Wróć</a>\r\n");
+      out.write("\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

@@ -8,17 +8,18 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="static/style.css">
     <title>HODOWLA</title>
 </head>
 <body>
-    <h2>Szczegóły o ${pies.getimie()}!</h2>
-        <img src="${pies.getzdjUrl()}"/>
-            <div>
+    <h2 class="nagl">Szczegóły o ${pies.getimie()}!</h2>
+            <div class="index">
+                <img src="${pies.getzdjUrl()}"/><br>
                 <span> Rok urodzenia: ${pies.getrok()} </span><br>
                 <span> Płeć: ${pies.getplec()} </span>
-            </div>
-    <a href='hodowla.jsp'>Wróć </a>
-    <a href='Ed_Psa.jsp?id=${dane.gethodowla().indexOf(pies)}'>Edytuj </a>
-    <a href='Us_Psa.jsp?id=${dane.gethodowla().indexOf(pies)}'>Usuń </a>
-</body>
+
+                <br><br><br><a href='hodowla.jsp' class="button">Wróć </a>
+                <a href='Ed_Psa.jsp?id=${dane.gethodowla().indexOf(pies)}' class="button">Edytuj </a>
+                <a href='Us_Psa.jsp?id=${dane.gethodowla().indexOf(pies)}' class="button">Usuń </a>
+            </div></body>
 </html>

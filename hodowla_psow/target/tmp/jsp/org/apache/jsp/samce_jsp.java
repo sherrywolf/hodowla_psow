@@ -74,26 +74,102 @@ public final class samce_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("dane", dane, PageContext.APPLICATION_SCOPE);
         }
       }
+      out.write('\r');
+      out.write('\n');
+      com.example.hodowla.web.Licznik licznik = null;
+      synchronized (application) {
+        licznik = (com.example.hodowla.web.Licznik) _jspx_page_context.getAttribute("licznik", PageContext.APPLICATION_SCOPE);
+        if (licznik == null){
+          licznik = new com.example.hodowla.web.Licznik();
+          _jspx_page_context.setAttribute("licznik", licznik, PageContext.APPLICATION_SCOPE);
+        }
+      }
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("    <link rel=\"stylesheet\" href=\"static/style.css\">\r\n");
       out.write("    <title>HODOWLA</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("<h2>Oto Twoje samice:</h2>\r\n");
+      out.write("<h2 class=\"nagl\">Oto Twoje samce:</h2>\r\n");
       out.write("\r\n");
-      out.write("<div>\r\n");
+      out.write("<div class=\"index\">\r\n");
       out.write("\r\n");
       out.write("    ");
-      if (_jspx_meth_c_forEach_0(_jspx_page_context))
+      //  c:forEach
+      org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+      _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
+      _jspx_th_c_forEach_0.setParent(null);
+      _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla()}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+      _jspx_th_c_forEach_0.setVar("pies");
+      int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
+      try {
+        int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
+        if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+          do {
+            out.write("\r\n");
+            out.write("        ");
+            //  c:if
+            org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_if_0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _jspx_tagPool_c_if_test.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
+            _jspx_th_c_if_0.setPageContext(_jspx_page_context);
+            _jspx_th_c_if_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_forEach_0);
+            _jspx_th_c_if_0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getplec() == 'samiec' }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
+            int _jspx_eval_c_if_0 = _jspx_th_c_if_0.doStartTag();
+            if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+              do {
+                out.write("\r\n");
+                out.write("            <a href=\"pokazpies.jsp?id=");
+                out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+                out.write("\">\r\n");
+                out.write("                <h2 class=\"button\">");
+                out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+                out.write("</h2>\r\n");
+                out.write("            </a>\r\n");
+                out.write("            ");
+ licznik.plus(); 
+                out.write("\r\n");
+                out.write("        ");
+                int evalDoAfterBody = _jspx_th_c_if_0.doAfterBody();
+                if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+                  break;
+              } while (true);
+            }
+            if (_jspx_th_c_if_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+              _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_0);
+              return;
+            }
+            _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_0);
+            out.write("\r\n");
+            out.write("    ");
+            int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
+            if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+              break;
+          } while (true);
+        }
+        if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+          return;
+        }
+      } catch (Throwable _jspx_exception) {
+        while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
+          out = _jspx_page_context.popBody();
+        _jspx_th_c_forEach_0.doCatch(_jspx_exception);
+      } finally {
+        _jspx_th_c_forEach_0.doFinally();
+        _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
+      }
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    ");
+      if (_jspx_meth_c_if_1(_jspx_page_context))
         return;
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("    <a href=\"hodowla.jsp\" class=\"button\">Wróć</a>\r\n");
       out.write("</div>\r\n");
-      out.write("<a href=\"hodowla.jsp\">Wróć</a>\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
@@ -109,77 +185,31 @@ public final class samce_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
   }
 
-  private boolean _jspx_meth_c_forEach_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
-    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
-    _jspx_th_c_forEach_0.setParent(null);
-    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla()}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_c_forEach_0.setVar("pies");
-    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
-    try {
-      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
-      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        do {
-          out.write("\r\n");
-          out.write("        ");
-          if (_jspx_meth_c_if_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
-            return true;
-          out.write("\r\n");
-          out.write("    ");
-          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
-          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-            break;
-        } while (true);
-      }
-      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_c_forEach_0.doFinally();
-      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
-    }
-    return false;
-  }
-
-  private boolean _jspx_meth_c_if_0(javax.servlet.jsp.tagext.JspTag _jspx_th_c_forEach_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_c_forEach_0)
+  private boolean _jspx_meth_c_if_1(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_if_0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _jspx_tagPool_c_if_test.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_if_0.setPageContext(_jspx_page_context);
-    _jspx_th_c_if_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_forEach_0);
-    _jspx_th_c_if_0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getplec() == 'samiec' }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
-    int _jspx_eval_c_if_0 = _jspx_th_c_if_0.doStartTag();
-    if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_if_1 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _jspx_tagPool_c_if_test.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
+    _jspx_th_c_if_1.setPageContext(_jspx_page_context);
+    _jspx_th_c_if_1.setParent(null);
+    _jspx_th_c_if_1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${licznik.getlicznik() == 0 }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
+    int _jspx_eval_c_if_1 = _jspx_th_c_if_1.doStartTag();
+    if (_jspx_eval_c_if_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\r\n");
-        out.write("            <a href=\"pokazpies.jsp?id=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write("\">\r\n");
-        out.write("                <h2>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write("</h2>\r\n");
-        out.write("            </a>\r\n");
-        out.write("        ");
-        int evalDoAfterBody = _jspx_th_c_if_0.doAfterBody();
+        out.write("            <h2>Nie masz żadnych samców w swojej hodowli!</h2>\r\n");
+        out.write("    ");
+        int evalDoAfterBody = _jspx_th_c_if_1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
       } while (true);
     }
-    if (_jspx_th_c_if_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_0);
+    if (_jspx_th_c_if_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_1);
       return true;
     }
-    _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_0);
+    _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_1);
     return false;
   }
 }

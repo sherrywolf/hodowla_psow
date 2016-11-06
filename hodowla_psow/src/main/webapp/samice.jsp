@@ -8,17 +8,18 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="static/style.css">
     <title>HODOWLA</title>
 </head>
 <body>
-<h2>Oto Twoje samice:</h2>
+<h2 class="nagl">Oto Twoje samice:</h2>
 
-<div>
+<div class="index">
 
     <c:forEach items="${dane.gethodowla()}" var="pies">
     <c:if test="${pies.getplec() == 'samica' }">
         <a href="pokazpies.jsp?id=${dane.gethodowla().indexOf(pies)}">
-            <h2>${pies.getimie()}</h2>
+            <h2 class="button">${pies.getimie()}</h2>
         </a>
         <% licznik.plus(); %>
     </c:if>
@@ -27,8 +28,8 @@
     <c:if test="${licznik.getlicznik() == 0 }">
         <h2>Nie masz żadnych samic w swojej hodowli!</h2>
     </c:if>
-
+    <a href="hodowla.jsp" class="button">Wróć</a>
 </div>
-    <a href="hodowla.jsp">Wróć</a>
+
 </body>
 </html>

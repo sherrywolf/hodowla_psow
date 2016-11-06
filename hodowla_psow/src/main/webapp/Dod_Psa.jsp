@@ -15,21 +15,21 @@
 
         <form action="dodaj.jsp" class="index">
             <div>
-                <label for="imie">Imie</label>
-                <input id="imie" type="text" name="imie" required/>
+                <label for="imie">Imie:</label><br>
+                <input id="imie" type="text" name="imie" class="pole" required/>
             </div>
             <div>
-                <label for="rok">Rok urodzenia:</label>
-                <input id="rok" type="number" name="rok" value="" min="1990" max="2017" required/>
+                <label for="rok">Rok urodzenia:</label><br>
+                <input id="rok" type="number" name="rok" class="pole" value="" min="1990" max="2017" required/>
             </div>
-                <label for="plec">Płeć</label>
-                <select id="plec" name="plec">
+                <label for="plec">Płeć:</label><br>
+                <select id="plec" name="plec" class="pole">
                     <option>samica</option>
                     <option>samiec</option>
                 </select>
             <div>
-                <label for="zdjUrl">Link zdjęcia</label>
-                <input id="zdjUrl" type="url" name="zdjUrl" value="" required/>
+                <label for="zdjUrl">Link zdjęcia:</label><br>
+                <input id="zdjUrl" type="url" name="zdjUrl" value="" class="pole" required/>
             </div>
             <div>
                 <a href="hodowla.jsp" class="button">Wróć</a>

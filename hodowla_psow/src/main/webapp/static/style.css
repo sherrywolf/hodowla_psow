@@ -21,7 +21,7 @@ body {
 
 .button{
 	background-color: #6C8FC7;
-	width: 200px;
+	width: 250px;
 	height: 20px;
 	margin: 20px auto;
 	padding: 15px;
@@ -47,10 +47,17 @@ body {
 .button2:hover{
 	background-color: #73A9FF;
 }
-	width: 1000px;
-	margin: auto;
-	padding: 50px 0px;
-}(top, rgba(255,255,255,0) 0%,rgba(130,91,0,1) 100%); /* Opera 11.10+ */
+
+.pole{	
+	font-size: 15px;
+	margin: 10px;
+	width: 250px;
+	height: 45px;
+}
+	height: 45px;
+}}px;
+	height: 45px;
+}+ */
     background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(130,91,0,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(130,91,0,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00',GradientType=0 ); /* IE6-9 */

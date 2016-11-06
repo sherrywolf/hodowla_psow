@@ -80,15 +80,16 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("    <link rel=\"stylesheet\" href=\"static/style.css\">\r\n");
       out.write("    <title>HODOWLA</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("<h2>Oto Twoja hodowla:</h2>\r\n");
+      out.write("<h2 class=\"nagl\">Oto Twoja hodowla:</h2>\r\n");
       out.write("\r\n");
  licznik.zero(); 
       out.write("\r\n");
       out.write("\r\n");
-      out.write("<div>\r\n");
+      out.write("<div class=\"index\">\r\n");
       out.write("    ");
       if (_jspx_meth_c_if_0(_jspx_page_context))
         return;
@@ -97,10 +98,11 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_forEach_0(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("</div>\r\n");
       out.write("\r\n");
-      out.write("<p>Możesz wyświetlić również same <a href=\"samice.jsp\">samice</a> lub samych <a href=\"samce.jsp\">samców</a></p>\r\n");
-      out.write("<h5><a href=\"Dod_Psa.jsp\">Dodaj psa!</a></h5>\r\n");
+      out.write("    <h5><a href=\"Dod_Psa.jsp\" class=\"button\">Dodaj psa!</a></h5>\r\n");
+      out.write("    <p>Możesz wyświetlić również same <a href=\"samice.jsp\">samice</a> lub samych <a href=\"samce.jsp\">samców</a></p>\r\n");
+      out.write("\r\n");
+      out.write("</div>\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
@@ -131,7 +133,7 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\r\n");
         out.write("        <div>\r\n");
         out.write("            <h4>Twoja hodowla wydaje się być pusta</h4>\r\n");
-        out.write("            <a href=\"przykladowe.jsp\">Dodaj przykładowe dane!</a>\r\n");
+        out.write("            <a href=\"przykladowe.jsp\" class=\"button\">Dodaj przykładowe dane!</a>\r\n");
         out.write("        </div>\r\n");
         out.write("    ");
         int evalDoAfterBody = _jspx_th_c_if_0.doAfterBody();
@@ -166,7 +168,7 @@ public final class hodowla_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("        <a href=\"pokazpies.jsp?id=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dane.gethodowla().indexOf(pies)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\">\r\n");
-          out.write("                        <h2>");
+          out.write("                        <h2 class=\"button\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pies.getimie()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</h2>\r\n");
           out.write("                    \r\n");
