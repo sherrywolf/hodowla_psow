@@ -5,6 +5,7 @@
 <% int id = Integer.parseInt(request.getParameter("id"));
     Pies pies = dane.gethodowla().get(id);
     pageContext.setAttribute("pies", pies);%>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,7 +15,7 @@
 <body>
     <h2 class="nagl">Szczegóły o ${pies.getimie()}!</h2>
             <div class="index">
-                <img src="${pies.getzdjUrl()}"/><br>
+                <img src="${pies.getzdjUrl()}" alt=""/><br>
                 <span> Rok urodzenia: ${pies.getrok()} </span><br>
                 <span> Płeć: ${pies.getplec()} </span>
 
